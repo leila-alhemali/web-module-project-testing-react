@@ -11,7 +11,7 @@ const Show = (props) => {
     return(<div data-testid="show-container">
         <h1>{show.name}</h1>
         <p>{show.summary}</p>
-
+        {console.log(show)}
         <label htmlFor="seasons">Select A Season</label><br/>
         <select onChange={handleSelect} name="seasons" id="seasons">
           <option value="none"></option>
